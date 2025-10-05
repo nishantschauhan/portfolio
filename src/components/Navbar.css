@@ -1,0 +1,115 @@
+
+
+/* Main navbar container fixed at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* Inner container for max width and centering */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flexbox layout for logo + links + mobile button */
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo text styling */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Desktop links */
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+/* Each navigation button */
+.nav-button {
+  background: transparent;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+/* Highlight active section */
+.nav-button.active {
+  background-color: rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+
+/* Mobile menu button (hidden on desktop) */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile menu section */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+/* Each mobile link */
+.mobile-link {
+  text-align: left;
+  padding: 0.6rem 1rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mobile-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-link.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+/* Media Query for mobile view */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide desktop links */
+  }
+
+  .menu-button {
+    display: block; /* show hamburger menu */
+  }
+
+  .mobile-menu {
+    display: flex; /* show dropdown */
+  }
+}
