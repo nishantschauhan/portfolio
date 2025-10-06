@@ -9,7 +9,7 @@ export default function HeroSection({ onScrollDown }) {
       <div className="hero-container">
         {/* Profile Image */}
         <div className="profile-image">
-          <div className="image-glow"></div>
+          <div className="image-glow"></div> 
           <img
             src="./assests/nishant.jpeg"
             alt="Nishant"
@@ -42,10 +42,10 @@ export default function HeroSection({ onScrollDown }) {
 
         {/* Social Links */}
         <div className="social-links">
-          <a href="#" className="social-icon">
+          <a href="https://github.com/nishantschauhan" className="social-icon">
             <Github />
           </a>
-          <a href="#" className="social-icon">
+          <a href="www.linkedin.com/in/nschauhan" className="social-icon">
             <Linkedin />
           </a>
         </div>
