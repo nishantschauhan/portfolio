@@ -1,3 +1,4 @@
+import React, { useState } from 'react'; 
 import './App.css';
 import ContactSection from './components/ContactSection';
 import ExperienceSection from './components/ExperienceSection';
@@ -6,14 +7,21 @@ import Navbar from './components/Navbar';
 import SkillsSection from './components/SkillsSection';
 
 function App() {
+  const [currentSection, setCurrentSection] = useState('home'); // now works
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar></Navbar>
-        <HeroSection/>
-        <ExperienceSection/>
-        <SkillsSection/>
-        <ContactSection/>
+        <Navbar currentSection={currentSection} onNavigate={scrollToSection} />
+        <HeroSection />
+        <ExperienceSection />
+        <SkillsSection />
+        <ContactSection />
       </header>
     </div>
   );

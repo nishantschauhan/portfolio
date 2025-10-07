@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 
 export default function Navbar({currentSection, onNavigate}) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  console.log('onNavigate prop:', onNavigate);
      const navItems = [
     { id: "home", label: "Home" },
     { id: "experience", label: "Experience" },

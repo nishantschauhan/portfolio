@@ -17,7 +17,7 @@ export default function HeroSection({ onScrollDown }) {
           />
         </div>
 
-        {/* Name and Title */}
+      
         <div className="hero-text">
           <h1 className="hero-name">Nishant Singh </h1>
           <p className="hero-title">Full Stack Developer</p>
@@ -28,7 +28,7 @@ export default function HeroSection({ onScrollDown }) {
           </p>
         </div>
 
-        {/* CTA Buttons */}
+
         <div className="cta-buttons">
           <button className="download-btn">
             <Download className="icon" />
@@ -45,7 +45,7 @@ export default function HeroSection({ onScrollDown }) {
           <a href="https://github.com/nishantschauhan" className="social-icon">
             <Github />
           </a>
-          <a href="www.linkedin.com/in/nschauhan" className="social-icon">
+          <a href="https://www.linkedin.com/in/nishantsingh12/" className="social-icon">
             <Linkedin />
           </a>
         </div>
@@ -60,3 +60,4 @@ export default function HeroSection({ onScrollDown }) {
     </section>
   );
 }
+
