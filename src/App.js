@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import SkillsSection from './components/SkillsSection';
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('home'); // now works
+  const [currentSection] = useState('home'); // now works
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
