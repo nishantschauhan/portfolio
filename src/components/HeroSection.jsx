@@ -30,10 +30,10 @@ export default function HeroSection({ onScrollDown }) {
 
 
         <div className="cta-buttons">
-          <button className="download-btn">
-            <Download className="icon" />
-            Download Resume
-          </button>
+            <a href="./CV_oct.pdf" download className="download-btn">
+               <Download className="icon" />
+             Download Resume
+            </a>
           <button className="work-btn" onClick={onScrollDown}>
             View My Work
             <ArrowDown className="icon" />
@@ -51,12 +51,6 @@ export default function HeroSection({ onScrollDown }) {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="scroll-indicator">
-        <button onClick={onScrollDown} className="scroll-btn">
-          <ArrowDown />
-        </button>
-      </div>
     </section>
   );
 }

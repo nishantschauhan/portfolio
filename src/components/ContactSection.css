@@ -147,7 +147,7 @@
 /* === FORM === */
 .contact-form-card {
   background: #ffffff;
-  padding: 2.5rem;
+  padding: 5rem;
   border-radius: 2rem;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
@@ -162,9 +162,60 @@
 /* Form Grid */
 .grid-two {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
+
+.grid-two > div {
+  width: 100%; /* fill each grid column fully */
+}
+
+.contact-form-card input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 1.5rem;
+  border: none; /* No border initially */
+  font-size: 1rem;
+  color: #1f2937;
+  background: #fff;
+  transition: box-shadow 0.2s, border 0.2s;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px transparent; /* Reserve space, no visible border */
+}
+
+/* Border only on focus */
+.contact-form-card input:focus {
+  outline: none;
+  border: 2px solid #4f46e5;  /* Indigo border on focus (match your design) */
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.1);
+}
+
+/* Email input right more rounded (optional for style) */
+.contact-form-card input[type="email"] {
+  border-radius: 1.5rem;
+}
+
+/* Card, for spacing */
+.contact-form-card {
+  background: #fff;
+  padding: 2.5rem 2.5rem 4rem 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 767px) {
+  .grid-two {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+
+
 
 @media (min-width: 768px) {
   .grid-two {
@@ -183,27 +234,30 @@
 
 .contact-form-card input,
 .contact-form-card textarea {
-  width: 100%;
+   width: 100%;
   padding: 0.9rem 1rem;
   border-radius: 0.75rem;
-  border: 1px solid #d1d5db;
+  border: none; /* Remove border by default */
   font-size: 1rem;
   color: #1f2937;
   background-color: #fff;
-  transition: all 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: inset 0 0 0 1px transparent; /* invisible border effect */
+   font-family: 'Inter', 'Segoe UI', 'Arial', 'sans-serif';
 }
 
 .contact-form-card input:focus,
 .contact-form-card textarea:focus {
-  border-color: #6366f1;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
   outline: none;
+  border: 1px solid #6366f1; /* colored border on focus */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
 
 .contact-form-card textarea {
   resize: none;
   height: 130px;
 }
+
 
 /* === BUTTON === */
 .submit-btn {

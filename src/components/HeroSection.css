@@ -98,6 +98,7 @@
   color: white;
   border: none;
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+  text-decoration: none;
 }
 
 .download-btn:hover {

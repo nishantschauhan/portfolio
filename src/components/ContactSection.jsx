@@ -47,21 +47,21 @@ export default function ContactSection() {
                 <div className="contact-item-icon email"><Mail /></div>
                 <div>
                   <p className="label">Email</p>
-                  <p className="value">alex.johnson@example.com</p>
+                  <p className="value">nishant0660@gmail.com</p>
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-item-icon phone"><Phone /></div>
                 <div>
                   <p className="label">Phone</p>
-                  <p className="value">+1 (555) 123-4567</p>
+                  <p className="value">+49-15566082982</p>
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-item-icon location"><MapPin /></div>
                 <div>
                   <p className="label">Location</p>
-                  <p className="value">San Francisco, CA</p>
+                  <p className="value">Germany</p>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function ContactSection() {
         </div>
 
         <div className="contact-footer">
-          <p>© 2024 Alex Johnson. Built with passion and modern technologies.</p>
+          <p>© 2022 Nishant Singh. Built with passion and modern technologies.</p>
         </div>
       </div>
     </section>
